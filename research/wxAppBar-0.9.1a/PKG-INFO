@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: wxAppBar
+Version: 0.9.1a
+Summary: Win32 AppBar control for wxPython
+Home-page: http://wxappbar.sourceforge.net
+Author: Mike C. Fletcher
+Author-email: mcfletch@users.sourceforge.net
+License: BSD-style, see license.txt for details
+Download-URL: https://sourceforge.net/project/showfiles.php?group_id=102251
+Description: Win32 AppBar control for wxPython
+        
+        wxAppBar provides a wrapper for the Win32 AppBar control
+        for use with wxPython.  AppBars (also called Task Bars)
+        are given a reserved area on one side of the screen so
+        that they are always visible.
+        
+        The wxAppBar control is built using ctypes (no C/C++
+        code), so can be readily customised.
+        
+Keywords: wxPython,AppBar,Start,TaskBar,OfficeBar,Win32,ctypes
+Platform: Win32
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Desktop Environment
+Classifier: Environment :: Win32 (MS Windows)

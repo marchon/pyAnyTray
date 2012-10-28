@@ -1,0 +1,25 @@
+Gnome - Toolbar Widget 
+--------------------------------------------------
+
+Use insert(tool_item, position) to insert the tool_item at position. If position is negative, the item is appended at the end of the toolbar.
+
+get_item_index(tool_item) retrieves the position of tool_item on the toolbar.
+
+get_n_items() returns the number of items on the toolbar; get_nth_item(position) returns the item in position position.
+
+If the toolbar does not have room for all the menu items, and set_show_arrow(True), the items that do not have room are shown through an overflow menu.
+set_icon_size(icon_size) sets the size of icons in the toolbar; icon_size can be one of Gtk.IconSize.INVALID, Gtk.IconSize.MENU, Gtk.IconSize.SMALL_TOOLBAR, Gtk.IconSize.LARGE_TOOLBAR, Gtk.IconSize.BUTTON, Gtk.IconSize.DND, Gtk.IconSize.DIALOG. This should be used only for special-purpose toolbars, normal application toolbars should respect user preferences for the size of icons. unset_icon_size() unsets the preferences set with set_icon_size(icon_size), so that user preferences are used to determine the icon size.
+
+set_style(style), where style is one of Gtk.ToolbarStyle.ICONS, Gtk.ToolbarStyle.TEXT, Gtk.ToolbarStyle.BOTH, Gtk.ToolbarStyle.BOTH_HORIZ, sets if the toolbar shows only icons, only text, or both (vertically stacked or alongside each other). To let user preferences determine the toolbar style, and unset a toolbar style so set, use unset_style().
+
+
+In this sample we used the following:
+  GtkToolbar
+  GtkToolButton
+  GtkToolItem
+  Stock Items
+  GtkActionable
+  GtkWidget
+  Event Structures
+
+

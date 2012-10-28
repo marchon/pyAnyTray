@@ -1,0 +1,65 @@
+self.icon.AddMenuItems( {"widget-type" : 0,  
+             "label": "this is an entry of the main menu",  
+                 "icon" : "gtk-add",  
+                 "menu" : 0,  
+                 "id" : 1,  
+                 "tooltip" : "this is the tooltip that will appear when you hover this entry"},  
+             {"widget-type" : 2,  
+             "menu" : 0},  
+             {"widget-type" : 1,  
+                 "label": "this is a sub-menu",  
+                 "icon" : "/path/to/image",  
+                 "menu" : 0,  
+                 "id" : 2},  
+             {"widget-type" : 3,  
+             "label": "this entry can be true or false",  
+             "icon" : "/path/to/another/image",  
+             "menu" : 1,  
+             "state": True,  
+             "id" : 101},  
+             {"widget-type" : 0,  
+             "label": "bla bla bla",  
+             "menu" : 1,  
+             "id" : 102},  
+             {"widget-type" : 4,  
+             "label": "you can choose this entry",  
+             "menu" : -1,  
+             "group": 201,  
+             "id" : 201},  
+             {"widget-type" : 4,  
+             "label": "or this one",  
+             "menu" : -1,  
+             "group": 201,  
+             "state": True,  
+             "id" : 202},  
+             {"widget-type" : 4,  
+             "label": "or even this one",  
+             "menu" : -1,  
+             "group": 201,  
+             "id" : 203} ) 
+
+
+
+
+self.identica_menu_id = 5000 
+self.add_identica_menu_id = 5001 
+
+def build_identica_menu(self): 
+identica_menu = [] 
+menu = { 
+'type' : CDApplet.MENU_SUB_MENU, 
+'label' : _("Identi.ca"), 
+'id' : self.identica_menu_id, 
+'icon' : os.path.abspath("./data/identica.png") 
+} 
+sub_menu = { 
+'type' : CDApplet.MENU_ENTRY, 
+'label' : _("Add"), 
+'id' : self.add_identica_menu_id, 
+'menu' : self.identica_menu_id 
+} 
+identica_menu.append (menu) 
+identica_menu.append (sub_menu) 
+self.icon.AddMenuItems(identica_menu)
+
+

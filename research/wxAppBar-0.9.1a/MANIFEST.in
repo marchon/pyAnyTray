@@ -1,0 +1,15 @@
+include MANIFEST.in
+include license.txt
+include *.py
+include wxappbar/*
+include wxappbar/doc/*.html
+include wxappbar/doc/style/*.*
+include wxappbar/doc/pydoc/*.py
+exclude wxappbar/doc/pydoc/*.html
+
+global-exclude *CVS*
+global-exclude *Cvs*
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.db
+global-exclude *.gz
